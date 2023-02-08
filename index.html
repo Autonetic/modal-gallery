@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- written by Autonetix.co - "wtf is this website?!" -->
+<head>
+    <title>Modal Gallery Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div>
+    <h1>Modal Image Gallery</h1>
+    <p>Multiple images with one modal!</p>
+    <p>A small bit of jQuery is required for this process to work correctly.</p>
+    <div class="example">
+        <p>
+            <b>Examples:</b>
+            <br>
+            <img class="popImgs" src="https://autonetix.co/img/modalGalleryPreview.png" alt="Figure 1" width="300" height="200">
+            <img class="popImgs" src="https://autonetix.co/img/modalGalleryPreview2.png" alt="Figure 2" width="300" height="200">
+            <img class="popImgs" src="https://autonetix.co/img/modalGalleryPreview3.png" alt="Figure 3" width="300" height="200">
+        </p>
+    </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+    <h2>
+        Example By: <a href="https://autonetix.co">Autonetix.co</a>
+    </h2>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- The Close Button -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+<!-- Modal Content -->    
+    <img class="modal-content" id="img01">
+<!-- Modal Caption -->
+    <div id="caption"></div>
+</div>
+<!-- External script files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="modalgallery.js"></script>
+</body>
